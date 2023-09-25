@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>MapReduce</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="slick/slick.css"/>    
+    <link rel="stylesheet" href="slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/templatemo-dream-pulse.css" />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">        
+          <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-sidebar-sticky">
+              <div class="tm-brand-box">
+                <div class="tm-double-border-1">
+                  <div class="tm-double-border-2">
+                    <h1 class="tm-brand text-uppercase">Map
+                      Reduce</h1>
+                  </div>
+                </div>
+              </div>
+
+
+              <!----------------------------------- Menuuuuu --------------------------------->
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav"> 
+
+                <li class="nav-item">
+                  <a href="#intro" class="nav-link active">
+                    <span class="d-inline-block mr-3">Definición</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#about" class="nav-link active">
+                    <span class="d-inline-block mr-3">Fases</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#History" class="nav-link">
+                    <span class="d-inline-block mr-3">Historia</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#work" class="nav-link">
+                    <span class="d-inline-block mr-3">Arquitectura</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#clients" class="nav-link">
+                    <span class="d-inline-block mr-3">Funcionamiento</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#talk" class="nav-link">
+                    <span class="d-inline-block mr-3">Ejemplo</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+                <!-- <li class="nav-item">
+                  <a href="#appli" class="nav-link">
+                    <span class="d-inline-block mr-3">Aplicaciones</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li> -->
+
+                <li class="nav-item">
+                  <a href="#beneficios" class="nav-link">
+                    <span class="d-inline-block mr-3">Beneficios</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+
+                <li class="nav-item">
+                  <a href="#refrencias" class="nav-link">
+                    <span class="d-inline-block mr-3">Fuentes</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+          
+          <main role="main" class="ml-sm-auto col-12">
+            <div
+              class="parallax-window"
+              data-parallax="scroll"
+              data-image-src="img/41.jpg"><!---------------imagen de fondo---------------->
+
+          <!----------------------------------------definicion------------------------------->
+              <div class="tm-section-wrap">
+                <section id="intro" class="tm-section">
+                    <div class="tm-bg-white-transparent tm-intro">
+                        <h2 class="tm-section-title mb-5 text-uppercase tm-color-gray"><br>¿Qué es?<br></h2></h2>
+                        <p class="tm-color-gray">
+                          <strong>Es un modelo de programación que se ejecuta en el sistema Hadoop. 
+                          Su objetivo principal es procesar grandes volúmenes de datos almacenados en 
+                          el sistema de archivos Hadoop (HDFS). Utiliza algoritmos paralelos distribuidos 
+                          en clústeres de computadoras para agilizar el procesamiento de datos.</strong> 
+                        </p>
+                    </div>              
+                </section>
+            </div>            
+          </div>
+
+          <!---------------------------------------- composicision------------------------------->
+          <div class="tm-section-wrap bg-white">
+            <section id="about" class="row tm-section">
+              
+              <div class="col-xl-6">
+                <div class="tm-section-half">
+                  <div><i><img src="img/datos.png"></i></div>                        
+                    <h2 class="tm-section-title tm-color-primary mb-5">Map</h2>
+                    <p class="mb-5">
+                      Consiste en la capacidad de leer y 
+                      formatear datos dentro de la estructura 
+                      interna del Hadoop. Es la encargada de 
+                      «etiquetar» o «clasificar» los datos que 
+                      se leen , toma un conjunto de datos y se 
+                      convierte en otro conjunto de datos, en 
+                      el que los elementos se dividen en tuplas 
+                      (pares clave/valor).
+                    </p>
+                </div>
+              </div>
+
+              <div class="col-xl-6">
+                <div class="tm-section-half">
+                  <div><i><img src="img/reduce.png"></i></div>
+                    <!--<div><i class="far fa-6x fa-building mb-5 tm-section-icon"></i></div>-->
+                    <h2 class="tm-section-title tm-color-primary mb-5">Reduce</h2>
+                    <p class="mb-5">
+                      Durante la fase de 'Map', se generan datos intermedios. 
+                      Luego, en 'shuffle' y 'sort', estos datos se reorganizan 
+                      y redistribuyen entre nodos según sus claves. Esto prepara 
+                      el terreno para la fase de 'Reduce', donde se realizan 
+                      operaciones de reducción en los datos agrupados, obteniendo 
+                      resultados finales más significativos y manejables.
+                    </p>
+                </div>
+              </div>
+            </section>
+          </div>
+            
+          <!----------------------------------------Historia------------------------------->
+          <div class="tm-section-wrap bg-white">
+            <section id="History" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">Historia</h2>
+                          <p class="mb-5">
+                            Introducido por primera vez por Google a finales del año 2004. 
+                            El objetivo era crear un framework adaptado a la computación 
+                            paralela que permitiera procesar y generar grandes colecciones 
+                            de datos sobre máquinas genéricas; este framework procesa la 
+                            información dividiéndola en diferentes servidores. Los cuales 
+                            procesan todos los datos. El resultado, un tratamiento mucho 
+                            más veloz y automatizado, sin la necesidad de utilizar 
+                            supercomputadores o servidores dedicados, y que fuera fácilmente escalable. 
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-xl-10 col-lg-8 col-md-6 col-sm-6 tm-img-wrap">
+                    <a href="#">
+                      <img src="img/hadoopmapreduce.png" alt="Client Image" class="img-fluid tm-client-img" />
+                    </a>                          
+                  </div>
+              </div>
+            </section>
+          </div>
+
+          <!----------------------------------------Arquitectura------------------------------->
+          <div class="tm-section-wrap bg-white">
+            <section id="work" class="row tm-section">
+              <div class="col-12">
+                <div class="w-100 tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                      <div class="tm-gallery-wrap">
+                          <p class="mb-5">
+                            La arquitectura Hadoop MapReduce es adecuada para ejecutar programas MapReduce escritos en diferentes 
+                            lenguajes: C, Python, Ruby y Java. 
+                      
+
+                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Componentes de la arquitectura MapReduce:</h2>
+                          <p style="text-align: justify;" class="mb-5">
+                            <strong style="color: blue;">Cliente:</strong> es quien lleva el trabajo a MapReduce para su procesamiento a Hadoop MapReduce Manager.<br>
+                            <strong style="color: blue;">Trabajo:</strong> es el trabajo real que el cliente quería hacer y que se compone de tantas tareas más pequeñas que el cliente quiere procesar o ejecutar.<br>
+                            <strong style="color: blue;">Hadoop MapReduce Master:</strong> divide el trabajo particular en partes del trabajo posteriores.<br>
+                            <strong style="color: blue;">Partes del Trabajo:</strong>  la tarea o subtrabajos que se obtienen luego de dividir el trabajo principal. El resultado de todas las partes del trabajo combinadas para producir el resultado final.<br>
+                            <strong style="color: blue;">Datos de entrada:</strong> el conjunto de datos que se envía a MapReduce para su procesamiento.<br>
+                            <strong style="color: blue;">Datos de salida:</strong> el resultado final se obtiene después del procesamiento.
+                          </p>
+
+                            <a href="#">
+                              <img src="img/MapReduce-Architecture.jpg" alt="Client Image" class="img-fluid tm-client-img" />
+                            </a>                          
+
+                          <br><br>
+
+                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Administran la arquitectura MapReduce:</h2>
+                          <p style="text-align: justify;">Cuenta con un servidor maestro o <strong>JobTracker</strong> y varios servidores 
+                            esclavos o  <strong>TaskTrackers.</strong><br>
+                            •	Los usuarios envían trabajos al <strong style="color: blue;">JobTracker</strong>, que los pone en una 
+                            cola de trabajos pendientes y los ejecuta en el orden de llegada. El <strong>JobTracker</strong> 
+                            gestiona la asignación de tareas y delega las tareas a los <strong>TaskTrackers</strong>.<br>
+                            •	Los <strong style="color: blue;">TaskTrackers</strong> ejecutan tareas bajo la orden del <strong>JobTracker</strong>, 
+                            a su vez, gestionan, el flujo de datos entre la fase Map y la fase Reduce.<hr>
+                          </p>
+                          <p style="text-align: justify;">
+                            También existe un componente importante de la arquitectura MapReduce conocido como <strong>Job History Server</strong> 
+                            que es un proceso demonio que guarda y almacena información histórica sobre la tarea o aplicación, 
+                            como los registros que se generan durante o después de la ejecución del trabajo y se almacenan.
+                          </p>
+
+                          <div class="col-xl-10 col-lg-8 col-md-6 col-sm-6 tm-img-wrap">
+                            <a href="#">
+                              <img src="img/ejemplocluster3nodos.png">
+                            </a>                          
+                          </div>
+
+                      </div>                        
+                    </div>                  
+                  </div>     
+              </div>         
+            </section>
+          </div>
+            
+          <!----------------------------------------como funciona------------------------------->
+          <div class="tm-section-wrap bg-white">
+            <section id="clients" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">¿Cómo funciona?</h2>
+                          <p style="text-align: justify;" class="mb-5">
+                            MapReduce cuenta con una serie de procesos:<br>
+                                •	<strong style="color: blue;">Input (entrada):</strong> el primero de ellos consiste en la agregación de la información textual que se procesará.<br>
+                                •	<strong style="color: blue;">Splitting (separar):</strong> hace referencia al proceso de división de los datos.<br>
+                                •<strong style="color: blue;">Mapping (mapeo):</strong> mapeo de la información, es decir, la identificación y clasificación de los datos.<br>
+                                •	<strong style="color: blue;">Shuffling (barajar):</strong> este proceso consiste en la reubicación de los datos según su relación.<br>
+                                •	<strong style="color: blue;">Reducing (reducir):</strong> la cúspide de su función es reducir. Hadoop MapReduce lleva a cabo su principal objetivo de reducir la información basándose en los parámetros de análisis de datos.<br>
+                                •	<strong style="color: blue;">Final result:</strong> por último, se arrojan los resultados de la información simplificada.<br>
+                          </p>
+                          <div class="col-xl-10 col-lg-8 col-md-6 col-sm-6 tm-img-wrap"> 
+                            <a href="#">
+                              <img src="img/MapReduce-Way.png" alt="Client Image" class="img-fluid tm-client-img" />
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>                             
+            </section>
+          </div>
+            
+          <!----------------------------------------ejemplo------------------------------->
+          <div class="tm-section-wrap bg-white">
+            <section id="talk" class="row tm-section">
+              <div class="col-12">
+                <div class="w-100 tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                      <div class="tm-gallery-wrap">
+                          <p class="mb-5"> 
+                            El siguiente ejemplo ilustra una tarea de MapReduce que se ejecuta en un clúster de tres nodos. 
+                            La tarea toma pedidos como entrada al Mapeador y extrae el conteo de productos consumidos en él. 
+                            El conteo de un solo nodo se agrega primero y este conteo agregado se envía al nodo de Reducer 
+                            para la agregación final.
+                          </p>
+                          <div class="col-xl-10 col-lg-8 col-md-6 col-sm-6 tm-img-wrap"> 
+                            <a>
+                              <img src="img/mapreduce-2.png" alt="Client Image" class="img-fluid tm-client-img" />
+                            </a>     
+                          </div>                      
+                      </div>                        
+                    </div>                        
+                </div>                  
+              </div>             
+            </section>
+          </div> 
+
+
+          <!--------------------------------------------- aplicaciones--------------------------->
+          <!-- <div class="tm-section-wrap bg-white">
+            <section id="appli" class="row tm-section">
+              <div class="col-12">
+                <div class="w-100 tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                      <div class="tm-gallery-wrap">
+                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">¿Cómo emplean las empresas MapReduce?</h2>
+                          <div class="tm-gallery">
+                            <div class="tm-gallery-item">                        
+                              <figure class="effect-bubba">
+                                <img src="img/gallery/large/01.jpeg" alt="Our Work Image" class="img-fluid">
+                                <figcaption>
+                                  <h2>Entrete<span>nimiento</span></h2>
+                                  <p>Para descubrir las películas más populares, en este caso Hadoop 
+                                    MapReduce te ayuda. Se centra principalmente en sus registros y clics.</p>
+                                  <a href="img/gallery/large/01.jpg">.</a>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="tm-gallery-item">
+                              <figure class="effect-bubba">
+                                <img src="img/gallery/02.jpg" alt="Our Work Image" class="img-fluid">
+                                <figcaption>
+                                  <h2>E<span>-commerce</span></h2>
+                                  <p>como Amazon, Walmart y eBay, utilizan el modelo de programación MapReduce para distinguir los artículos más queridos en función de las inclinaciones o el comportamiento de compra de los clientes.</p>
+                                  <a href="img/gallery/large/02.jpg"></a>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="tm-gallery-item">
+                              <figure class="effect-bubba">
+                                <img src="img/gallery/03.jpg" alt="Our Work Image" class="img-fluid">
+                                <figcaption>
+                                  <h2>Almacén<span>de datos</span></h2>
+                                  <p>para analizar grandes volúmenes de datos en almacenes de datos mientras implementamos una lógica empresarial específica para obtener información sobre los datos.</p>
+                                  <a href="img/gallery/large/03.jpg"></a>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="tm-gallery-item">
+                              <figure class="effect-bubba">
+                                <img src="img/gallery/04.jpg" alt="Our Work Image" class="img-fluid">
+                                <figcaption>
+                                  <h2>Detección<span>de fraude</span></h2>
+                                  <p>Las empresas financieras, incluidos bancos, compañías de seguros y lugares de pago a través del análisis de transacciones.</p>
+                                  <a href="img/gallery/large/04.jpg">View more</a>
+                                </figcaption>
+                              </figure>
+                            </div>
+                            <div class="tm-gallery-item">
+                              <figure class="effect-bubba">
+                                <img src="img/gallery/05.jpg" alt="Our Work Image" class="img-fluid">
+                                <figcaption>
+                                  <h2>Redes sociales</h2>
+                                  <p>realiza operaciones como tokenización, filtrado, recuento y agregación de contadores.</p>
+                                  <a href="img/gallery/large/05.jpg"></a>
+                                </figcaption>
+                              </figure>
+                            </div> -->
+
+                            <!---------------------- beneficios -------------------------------->
+                            <div class="tm-section-wrap bg-white">
+                              <section id="beneficios" class="row tm-section">
+                                <div class="col-12">
+                                  <div class="w-100 tm-double-border-1 tm-border-gray">
+                                      <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                                        <div class="tm-gallery-wrap">
+                                            <p class="mb-5">
+                                            <h2 class="tm-color-primary tm-section-title mb-4 ml-2">La programación de MapReduce ofrece varios beneficios para ayudarle a obtener información valiosa de su big data:</h2>
+                                            <p style="text-align: justify;" class="mb-5">
+                                              <strong style="color: blue;">•	Escalabilidad.</strong> Las empresas pueden procesar petabytes de datos almacenados en (HDFS). <br>
+                                              <strong style="color: blue;">•	Flexibilidad.</strong> Acceso más fácil a múltiples fuentes de datos y múltiples tipos de datos.<br>
+                                              <strong style="color: blue;">•	Velocidad </strong> Se ejecuta directamente desde dónde se encuentran los datos, por lo cual ofrece un procesamiento rápido de cantidades masivas de datos <br>
+                                              <strong style="color: blue;">•	Tolerancia a fallos.</strong>Al presentarse un fallo en alguno de los nodos, las tareas de este son transferidas a otro de sus pares.
+                                            </p>                            
+                                        </div>                        
+                                      </div>                  
+                                    </div>     
+                                </div>         
+                              </section>
+                            </div>
+
+                                      <!----------------------------------------Referencias------------------------------>
+                            <div class="tm-section-wrap bg-white">
+                              <section id="refrencias" class="row tm-section">
+                                <div class="col-12 tm-section-pad">
+                                    <div class="tm-flex-item-left">
+                                        <div class="tm-w-80">
+                                            <h2 class="tm-color-primary tm-section-title mb-4">Referencias</h2>
+                                            <p class="mb-5">
+                                              https://www.hpe.com/lamerica/es/what-is/mapreduce.html<br>
+                                              https://www.tokioschool.com/noticias/map-reduce-que-es/<br>
+                                              https://www.arsys.es/blog/mapreduce<br>
+                                              https://keepcoding.io/blog/mapreduce-hadoop/<br>
+                                              https://www.computerhope.com/jargon/m/mapreduce.htm<br>
+                                              https://thatcsharpguy.github.io/tv/mapreduce/<br>
+                                              https://www.alachisoft.com/es/resources/docs/ncache-5-0/prog-guide/mapreduce-overview.html<br>
+                                              https://u-next.com/blogs/cloud-computing/mapreduce-architecture/<br>
+                                              https://www.geeksforgeeks.org/mapreduce-architecture/<br>
+                                              https://k21academy.com/big-data-engineer/introduction-to-mapreduce-applications-of-mapreduce-working/<br>                                           
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                      </div>                        
+                    </div>                  
+                  </div>     
+              </div>         
+            </section>
+          </div>
+        
+     </main>      
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/templatemo-scripts.js"></script>
+  </body>
+</html>
