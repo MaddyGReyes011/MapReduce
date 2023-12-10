@@ -1,13 +1,7 @@
-/*
 
-DREAM PULSE
-
-https://templatemo.com/tm-536-dream-pulse
-
-*/
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
@@ -16,9 +10,9 @@ body {
 }
 
 p {
-  line-height: 2;
   text-align: justify;
 }
+
 
 a {
   transition: all 0.3s ease;
@@ -38,7 +32,7 @@ a {
 }
 
 .tm-color-gray {
-  color: #333;
+  color: #ffffff;
 }
 
 .tm-bg-black-transparent {
@@ -90,7 +84,7 @@ a {
   max-width: 230px;
   min-height: 160px;
   color: white;
-  text-align: center;
+  text-align: justify;
   margin: 70px auto 90px;
 }
 
@@ -171,7 +165,7 @@ a {
 
 .nav-link {
   font-size: 1.25rem;
-  padding-top: 12px;
+  /* padding-top: 12px; */
   padding-bottom: 12px;
 }
 
@@ -471,7 +465,7 @@ figure.effect-bubba:hover p {
 }
 
 .tm-w-80 {
-  max-width: 80%;
+  /* max-width: 80%; */
   text-align: center;
 }
 
